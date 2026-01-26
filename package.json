@@ -1,0 +1,44 @@
+{
+  "name": "yu-data-web-sdk",
+  "version": "1.0.1",
+  "license": "ISC",
+  "type": "module",
+  "private": false,
+  "main": "web-sdk.js",
+  "module": "web-sdk.esm.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./web-sdk.esm.js",
+      "require": "./web-sdk.js",
+      "types": "./index.d.ts"
+    }
+  },
+  "files": [
+    "*.js",
+    "*.map",
+    "*.d.ts",
+    "core",
+    "plugins",
+    "utils",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Liguanding/yu-data-web-sdk.git"
+  },
+  "devDependencies": {
+    "vitest": "^1.6.0",
+    "jsdom": "^24.0.0",
+    "typescript": "^5.0.0",
+    "rollup": "^4.0.0",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@rollup/plugin-terser": "^0.4.0",
+    "tslib": "^2.0.0"
+  }
+}
